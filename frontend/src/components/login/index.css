@@ -1,4 +1,4 @@
-/* Global Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: #f7f7f798;
     overflow: hidden;
-    /* Prevent scrollbars during animation */
+ 
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@ body {
     margin: 0;
 }
 
-/* Container for the form */
+
 .login-container {
     position: relative;
     display: flex;
@@ -31,7 +31,7 @@ body {
     background: linear-gradient(145deg, #565659c8, #a29bfe26);
     box-shadow: 0 20px 60px rgba(64, 60, 60, 0.1), 0 5px 10px rgba(0, 0, 0, 0.08);
     animation: fadeInForm 1.5s ease-out forwards;
-    /* Ensure the animation stays after it completes */
+/
     transform: translateY(40px);
 }
 
@@ -47,7 +47,7 @@ body {
     }
 }
 
-/* Form Header (Login/Register Title) */
+
 h2 {
     font-size: 2.5rem;
     font-weight: 600;
@@ -59,7 +59,6 @@ h2 {
     transition: all 0.3s ease;
 }
 
-/* Input fields */
 input {
     width: 100%;
     padding: 15px 20px;
@@ -76,21 +75,21 @@ input {
     box-shadow: 0 2px 5px rgba(29, 27, 27, 0.1);
 }
 
-/* Focus effect for inputs */
+
 input:focus {
     border-color: #070607e0;
     box-shadow: 0 0 8px rgba(8, 7, 13, 0.771);
     transform: scale(1.02);
 }
 
-/* Placeholder styling */
+
 input::placeholder {
     color: black;
     font-weight: 500;
     opacity: 0.8;
 }
 
-/* Button Styles */
+
 
 .btn {
     display: flex;
@@ -115,7 +114,7 @@ button {
     overflow: hidden;
 }
 
-/* Button hover and active effects */
+
 button:hover {
     background-color: #5d4ac7a0;
     transform: translateY(-2px);
@@ -126,7 +125,7 @@ button:active {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Loading state animation for the button */
+
 button.loading {
     pointer-events: none;
     background-color: #ddd;
@@ -143,7 +142,7 @@ button.loading::after {
     font-weight: 600;
 }
 
-/* Link for switching between login/register */
+
 span {
     margin-top: 15px;
     font-size: 0.95rem;
@@ -157,7 +156,7 @@ span:hover {
     color: #fefefe85;
 }
 
-/* Add floating effect */
+
 .login-container:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12), 0 5px 20px rgba(0, 0, 0, 0.06);
@@ -167,7 +166,7 @@ span:hover {
     transform: translateY(5px);
 }
 
-/* Animations for text and form appearance */
+
 @keyframes slideUp {
     0% {
         transform: translateY(30px);
@@ -184,7 +183,7 @@ form {
     animation: slideUp 1.2s ease-out;
 }
 
-/* Background Decoration */
+
 .login-container::before {
     content: '';
     position: absolute;
@@ -215,7 +214,6 @@ form {
     }
 }
 
-/* Media Queries for responsiveness */
 @media (max-width: 768px) {
     .login-container {
         padding: 30px;
