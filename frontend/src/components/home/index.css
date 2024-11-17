@@ -1,4 +1,3 @@
-/* Global Reset */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +9,6 @@ body {
 
     font-family: 'Arial', sans-serif;
     background-color: #1a1a1a;
-    /* Darker background for a more sleek look */
     color: #fff;
     line-height: 1.6;
     padding: 20px;
@@ -19,28 +17,21 @@ body {
     justify-content: center;
     align-items: center;
 
-    /* Forces the vertical scrollbar to always appear */
 
     height: 50% !important;
-    /* Makes the page taller than the viewport, forcing a scrollbar */
     overflow-y: scroll !important;
 }
 
-/* Container for Notes */
 .container {
     background-color: rgba(255, 255, 255, 0.12);
-    /* Slightly transparent white */
     border-radius: 15px;
     padding: 40px;
     width: 100%;
     max-width: 1000px;
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
-    /* Subtle shadow for the container */
     backdrop-filter: blur(15px);
-    /* A more prominent blur effect */
     overflow: hidden;
     transition: all 0.3s ease;
-    /* Smooth transition */
 }
 
 .operations {
@@ -56,7 +47,6 @@ body {
 
 }
 
-/* Create Note Section */
 .createNote {
     width: 100%;
     display: flex;
@@ -82,13 +72,10 @@ body {
 .createNote textarea {
     height: 55px;
     overflow: hidden;
-    /* Hide the scrollbar */
     scrollbar-width: none;
     /* For Firefox */
     -ms-overflow-style: none;
-    /* For Internet Explorer and Edge */
 
-    /* Webkit Browsers (Chrome, Safari, etc.) */
 
 }
 
@@ -100,9 +87,7 @@ body {
 .createNote textarea:focus {
     outline: none;
     border: 1px solid #3498db;
-    /* Blue border on focus */
     box-shadow: 0 0 5px rgba(52, 152, 219, 0.8);
-    /* Blue glow effect */
 }
 
 .createNote svg {
@@ -114,13 +99,10 @@ body {
 
 .createNote svg:hover {
     transform: scale(1.1);
-    /* Slightly scale the SVG on hover */
 }
 
-/* Title and Body of Notes */
 ul li {
     background-color: rgba(255, 255, 255, 0.2);
-    /* Soft white background for notes */
     border-radius: 12px;
     padding: 20px;
     margin-bottom: 25px;
@@ -133,13 +115,11 @@ ul li {
 ul li:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-    /* Hover effect with shadow */
 }
 
 ul li h3 {
     font-size: 1.8rem;
     color: #f7eeeec5;
-    /* Soft off-white color for titles */
     margin-bottom: 15px;
     text-align: center;
     font-family: 'Algerian', sans-serif;
@@ -158,7 +138,6 @@ ul li p {
     color: #bbb;
 }
 
-/* Loading, Error and No Notes Available */
 p {
     text-align: center;
     font-size: 1.2rem;
@@ -182,7 +161,6 @@ p.error {
     color: #aaa;
 }
 
-/* Heading */
 h1 {
     text-align: center;
     color: #fff;
@@ -193,7 +171,6 @@ h1 {
     letter-spacing: 2px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
