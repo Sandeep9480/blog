@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./index.css"; // Ensure your CSS file is correctly linked
+import "./index.css"; 
 import { useNavigate } from "react-router-dom";
 import { BASE_URL, clientServer } from "../..";
 
@@ -14,10 +14,10 @@ export const LoginComponent = () => {
 
   const navigate = useNavigate();
   useEffect(() => {
-    // Optional: This ensures the animation only triggers once on mount
-    document.body.style.overflow = "hidden"; // Disable scroll for better UX
+    
+    document.body.style.overflow = "hidden"; 
     return () => {
-      document.body.style.overflow = ""; // Restore default scroll on cleanup
+      document.body.style.overflow = "";
     };
   }, []);
 
